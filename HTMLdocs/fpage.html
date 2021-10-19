@@ -39,6 +39,15 @@
             height: 100px;
         }
 
+        #heading {
+            box-sizing: border-box;
+            height: 100px;
+            width: 100%;
+            float: left;
+            border: solid black 1px;
+            text-align: center;
+        }
+
         #wrapper{
             width: 80%;
             min-width: 350px;
@@ -49,10 +58,10 @@
         }
 
         aside{
-            width:33%;
+            width:20%;
             box-sizing: border-box;
-            float: left;
-            clear:left;
+            float: right;
+            clear:right;
             height: 300px;
             overflow-y: scroll;
         }
@@ -63,12 +72,16 @@
         }
 
         main img {
-            width: 80%;
+            box-sizing: border-box;
+            width: 20%;
+
+            float: left;
+            padding: 5px;
         }
 
         main{
-            width: 67%;
-            float: right;
+            width: 80%;
+            float: left;
             box-sizing: border-box;
         }
 
@@ -86,23 +99,26 @@
             display: inline-block;
         }
 
-        h1 {
-
-        }
-        h2 {
-            margin: 0;
+        section h2 {
+            margin-bottom: 0px;
         }
         h3 {
             margin: 0;
         }
 
+
         section {
             box-sizing: border-box;
             width: 100%;
             padding: 5px;
-            float: left; /* if widths are made smaller (eg 33%) then they will float into columns */
-        }
 
+        }
+        .sectionText {
+
+            padding: 5px;
+            font-size: large;
+
+        }
 
 
     </style>
@@ -119,6 +135,35 @@
             <li><a href="fpage.html">F-Page</a></li>
             <li><a href="zpage.html">Z-Page</a></li>
         </menu>
+        <div id="heading">
+            <h2>Title of the Page</h2>
+        </div>
+        <main>
+            <section id="section1">
+                <h2>Section 1</h2>
+                <img src="images/maskedPeople.JPG" alt="This is a sample picture"/>
+                <div class="sectionText">
+                    The history of the Internet has its origin in the efforts to build and interconnect computer networks that arose from research and development in the United States and involved international collaboration, particularly with researchers in the United Kingdom and France.
+                    The history of the Internet has its origin in the efforts to build and interconnect computer networks that arose from research and development in the United States and involved international collaboration, particularly with researchers in the United Kingdom and France.
+                </div>
+            </section>
+            <section id="section2">
+                <h2>Section 2</h2>
+                <img src="images/maskedPeople.JPG" alt="This is a sample picture"/>
+                <div class="sectionText">
+                    The history of the Internet has its origin in the efforts to build and interconnect computer networks that arose from research and development in the United States and involved international collaboration, particularly with researchers in the United Kingdom and France.
+                    The history of the Internet has its origin in the efforts to build and interconnect computer networks that arose from research and development in the United States and involved international collaboration, particularly with researchers in the United Kingdom and France.
+                </div>
+            </section>
+            <section id="section3">
+                <h2>Section 3</h2>
+                <img src="images/maskedPeople.JPG" alt="This is a sample picture"/>
+                <div class="sectionText">
+                    The history of the Internet has its origin in the efforts to build and interconnect computer networks that arose from research and development in the United States and involved international collaboration, particularly with researchers in the United Kingdom and France.
+                    The history of the Internet has its origin in the efforts to build and interconnect computer networks that arose from research and development in the United States and involved international collaboration, particularly with researchers in the United Kingdom and France.
+                </div>
+            </section>
+        </main>
         <aside>
             <h3>Aside 1</h3>
             <img src="images/splash.JPG" alt="This is a splash"/>
@@ -126,37 +171,16 @@
                 The history of the Internet has its origin in the efforts to build and interconnect computer networks that arose from research and development in the United States and involved international collaboration, particularly with researchers in the United Kingdom and France.
             </div>
         </aside>
-        <main>
-            <section id="section1">
-                <h2>Main</h2>
-                <img src="images/maskedPeople.JPG" alt="This is a sample picture"/>
-                <div>
-                    The history of the Internet has its origin in the efforts to build and interconnect computer networks that arose from research and development in the United States and involved international collaboration, particularly with researchers in the United Kingdom and France.
-                </div>
-            </section>
-            <section id="section2">
-                <h2>Main</h2>
-                <div>
-                    The history of the Internet has its origin in the efforts to build and interconnect computer networks that arose from research and development in the United States and involved international collaboration, particularly with researchers in the United Kingdom and France.
-                </div>
-            </section>
-            <section id="section3">
-                <h2>Main</h2>
-                <div>
-                    The history of the Internet has its origin in the efforts to build and interconnect computer networks that arose from research and development in the United States and involved international collaboration, particularly with researchers in the United Kingdom and France.
-                </div>
-            </section>
-        </main>
         <aside>
             <h3>Aside 2</h3>
-            <img src="images/solar.JPG" alt="This is a logo"/>
+            <img src="images/solar.JPG" alt="This is a solar"/>
             <div>
                 Early packet switching networks such as the NPL network, ARPANET, Merit Network, and CYCLADES researched and provided data networking in the early 1970s. ARPA projects and international working groups led to the development of protocols for internetworking, in which multiple separate networks could be joined into a network of networks, which produced various standards. Bob Kahn, at ARPA, and Vint Cerf, at Stanford University, published research in 1974 that evolved into the Transmission Control Protocol (TCP) and Internet Protocol (IP), the two protocols of the Internet protocol suite. The design included concepts from the French CYCLADES project directed by Louis Pouzin.[9]
             </div>
         </aside>
         <aside>
             <h3>Aside 3</h3>
-            <img src="images/sample.png" alt="This is a logo"/>
+            <img src="images/sample.png" alt="This is a sample"/>
             <div>
                 In the early 1980s, the National Science Foundation (NSF) funded national supercomputing centers at several universities in the United States, and provided interconnectivity in 1986 with the NSFNET project, thus creating network access to these supercomputer sites for research and academic organizations in the United States. International connections to NSFNET, the emergence of architecture such as the Domain Name System, and the adoption of TCP/IP internationally on existing networks marked the beginnings of the Internet.
             </div>
