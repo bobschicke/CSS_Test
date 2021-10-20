@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <title>zpage</title>
     <meta name="description" content="This is an example of a meta description.
     This will often show up in search results.">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -12,7 +12,7 @@
 
     <style>
         header, aside, main, footer, menu{
-            border: 1px solid black;
+            /* border: 1px solid black; */
             padding: 5px;
         }
 
@@ -45,16 +45,16 @@
             max-width: 1100px;
             margin-left: auto;
             margin-right: auto;
-            background-color: lightblue;
+            background-color: aliceblue;
         }
 
         aside{
-            width:33%;
+            width:16%;
             box-sizing: border-box;
             float: left;
-            clear:left;
-            height: 300px;
-            overflow-y: scroll;
+            display: inline-block;
+            /* height: 300px; */
+            padding-bottom: 20px;
         }
         aside img {
             margin: 0;
@@ -64,11 +64,17 @@
 
         main img {
             width: 80%;
+            margin-right: auto;
+            margin-left: 10%;
+        }
+        main h2 {
+            margin-left: 10%;
+            margin-bottom: 10px;
         }
 
         main{
-            width: 67%;
-            float: right;
+            width: 100%;
+            float: left;
             box-sizing: border-box;
         }
 
@@ -102,6 +108,10 @@
             padding: 5px;
             float: left; /* if widths are made smaller (eg 33%) then they will float into columns */
         }
+        #section1 img {
+            border: 10px solid gray;
+
+        }
 
 
 
@@ -111,54 +121,63 @@
 <body>
     <div id="wrapper">
         <header>
-            <h1>Header</h1>
+            <h1>The History of the Internet</h1>
         </header>
         <menu>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="fpage.html">F-Page</a></li>
-            <li><a href="zpage.html">Z-Page</a></li>
+            <li><a href="index.html">Z-Page</a></li>
         </menu>
-        <aside>
-            <h3>Aside 1</h3>
-            <img src="images/splash.JPG" alt="This is a splash"/>
-            <div>
-                The history of the Internet has its origin in the efforts to build and interconnect computer networks that arose from research and development in the United States and involved international collaboration, particularly with researchers in the United Kingdom and France.
-            </div>
-        </aside>
         <main>
             <section id="section1">
-                <h2>Main</h2>
-                <img src="images/maskedPeople.JPG" alt="This is a sample picture"/>
+                <h2>Explore The Interesting and Exciting History Of The Internet</h2>
+                <img src="images/collage.JPG" alt="This is a sample picture"/>
                 <div>
-                    The history of the Internet has its origin in the efforts to build and interconnect computer networks that arose from research and development in the United States and involved international collaboration, particularly with researchers in the United Kingdom and France.
-                </div>
-            </section>
-            <section id="section2">
-                <h2>Main</h2>
-                <div>
-                    The history of the Internet has its origin in the efforts to build and interconnect computer networks that arose from research and development in the United States and involved international collaboration, particularly with researchers in the United Kingdom and France.
-                </div>
-            </section>
-            <section id="section3">
-                <h2>Main</h2>
-                <div>
-                    The history of the Internet has its origin in the efforts to build and interconnect computer networks that arose from research and development in the United States and involved international collaboration, particularly with researchers in the United Kingdom and France.
+
                 </div>
             </section>
         </main>
         <aside>
-            <h3>Aside 2</h3>
-            <img src="images/solar.JPG" alt="This is a solar"/>
+            <h3>Pre Internet</h3>
+            <img src="images/mainframe.JPG" alt="This is a splash"/>
             <div>
-                Early packet switching networks such as the NPL network, ARPANET, Merit Network, and CYCLADES researched and provided data networking in the early 1970s. ARPA projects and international working groups led to the development of protocols for internetworking, in which multiple separate networks could be joined into a network of networks, which produced various standards. Bob Kahn, at ARPA, and Vint Cerf, at Stanford University, published research in 1974 that evolved into the Transmission Control Protocol (TCP) and Internet Protocol (IP), the two protocols of the Internet protocol suite. The design included concepts from the French CYCLADES project directed by Louis Pouzin.[9]
+                <a href="fpage.html">See what life was like before the internet.</a>
             </div>
         </aside>
         <aside>
-            <h3>Aside 3</h3>
-            <img src="images/sample.png" alt="This is a sample"/>
+            <h3>Arpa-net</h3>
+            <img src="images/arpanet1972.JPG" alt="This is a arpanet"/>
             <div>
-                In the early 1980s, the National Science Foundation (NSF) funded national supercomputing centers at several universities in the United States, and provided interconnectivity in 1986 with the NSFNET project, thus creating network access to these supercomputer sites for research and academic organizations in the United States. International connections to NSFNET, the emergence of architecture such as the Domain Name System, and the adoption of TCP/IP internationally on existing networks marked the beginnings of the Internet.
+                <a href="fpage.html">The exciting beginning of the Internet!</a>
+            </div>
+        </aside>
+        <aside>
+            <h3>Early Internet</h3>
+            <img src="images/dialupModem.JPG" alt="This is a early internet"/>
+            <div>
+                <a href="fpage.html">Wow! Dial-up Modems!</a>
+            </div>
+        </aside>
+        <aside>
+            <h3>Browsers and Search</h3>
+            <img src="images/mosaicBrowser.JPG" alt="This is a browser"/>
+            <div>
+                <a href="fpage.html">What good's the internet without browsers and search engines!</a>
+            </div>
+        </aside>
+        <aside>
+            <h3>Social Media</h3>
+            <img src="images/myspace.JPG" alt="This is a social media"/>
+            <div>
+                <a href="fpage.html">No need to leave your house to be sociable!</a>
+            </div>
+        </aside>
+        <aside>
+            <h3>E-Commerce</h3>
+            <img src="images/earlyamazon.JPG" alt="This is a amazon"/>
+            <div>
+                <a href="fpage.html">Well now no need to leave the house at all...except for work (not anymore)!</a>
             </div>
         </aside>
         <footer>
